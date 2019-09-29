@@ -43,4 +43,19 @@ body {
   Fifth row needs to adjust to fit content.
   Sixth row needs to adjust to fit content. */
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+
+  /* First column is the sidebar.
+  Second and Last columns are padding areas to center the rest and
+  into which some sections can bleed into for full-bleed sections.
+  The rest are for the main display. */
+  grid-template-columns:
+    [sidebar-start] 8rem
+    [sidebar-end full-start] minmax(6rem, 1fr)
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] 1fr [full-end];
+
+  & > * {
+    padding: 40px;
+    font-size: 3rem;
+  }
 }
