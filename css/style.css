@@ -120,7 +120,32 @@ body {
 
 .story__pictures {
   background-color: #c69963;
-  grid-column: full-start / col-end 4; }
+  grid-column: full-start / col-end 4;
+  /* Apply a primary color filter using linear-gradient */
+  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/back.jpg);
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center; }
+
+.story__img--1 {
+  /* As always with images we specify a width in percentage
+    so that it remains flexible */
+  width: 100%;
+  /* The image maintains its aspect ratio and will
+    not always fully cover the rows */
+  grid-row: 2 / 6;
+  grid-column: 2 / 6;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+
+.story__img--2 {
+  /* We can increase the width... */
+  width: 115%;
+  /* ... and give it a higher z-index */
+  z-index: 20;
+  grid-row: 4 / 6;
+  grid-column: 4 / 7;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
 
 .story__content {
   background-color: #f9f7f6;
