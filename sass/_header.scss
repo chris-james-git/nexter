@@ -14,8 +14,11 @@
   display: grid;
   // The 1fr for the first row will cause the following rows to be pushed down.
   // The stretch that occurs on the final row 1fr is dealt with by using align-self / justify-self.
-  grid-template-rows: 1fr min-content 6rem 1fr;
-  grid-template-columns: max-content;
+  // We use the minmax(6rem, min-content) to ensure the heading renders properly.
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  // use minmax(min-content, max-content) to get the image
+  // to scale responsively.
+  grid-template-columns: minmax(min-content, max-content);
   grid-row-gap: 1.5rem;
   justify-content: center;
 
@@ -54,9 +57,12 @@
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 3rem;
     justify-items: center;
+    align-items: center;
 
     img {
-      height: 2.5rem;
+      // Use max-height and max-width here to improve responsiveness
+      max-height: 2.5rem;
+      max-width: 100%;
       filter: brightness(70%);
     }
   }
