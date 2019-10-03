@@ -64,6 +64,10 @@ body {
     [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
     [center-end] 1fr [full-end];
 
+  // Note: There is another property called grid-template that lets you specify
+  // the rows and columns in one go, separated by a / thus: <rows> / <columns>
+  // However, this is perhaps a little awkward for readability.
+
   // We can completely alter the grid definition at breakpoints
   @media only screen and (max-width: $bp-large) {
     grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
