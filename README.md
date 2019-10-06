@@ -2,12 +2,14 @@
 
 This is a CSS Grid Showcase project developed alongside the Udemy course Advanced CSS and SASS, delivered by Jonas Schmedtmann.
 
+I have published my finished work on this project here: https://chrisjamesdev.000webhostapp.com/nexter/index.html
+
 ## About CSS Grid
 
-* CSS Grid Layout is a brand new module that brings a two-dimensional grid system to CSS for the first time;
+- CSS Grid Layout is a brand new module that brings a two-dimensional grid system to CSS for the first time;
 
-* CSS Grid replaces float layouts, using less, and more readable and logical CSS and HTML.
+- CSS Grid replaces float layouts, using less, and more readable and logical CSS and HTML.
 
-* CSS Grid works perfectly together with Flexbox, which is best to handle one-dimensional components and layouts.
+- CSS Grid works perfectly together with Flexbox, which is best to handle one-dimensional components and layouts.
 
-* CSS Grid completely changes the way that we envision and build two-dimensional layouts.
+- CSS Grid completely changes the way that we envision and build two-dimensional layouts.
